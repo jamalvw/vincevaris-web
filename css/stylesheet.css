@@ -14,3 +14,11 @@ img
 {
 	margin: 10px;
 }
+
+div.social-links img
+{
+	width: 30px;
+	margin: 0px;
+	margin-right: 1px;
+	margin-bottom: 10px;
+}

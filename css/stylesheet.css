@@ -5,7 +5,8 @@ body
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
-	color: #1F2937;
+	color: #F9FAF8;
+	background-color: #2A2438;
 }
 
 a
@@ -38,6 +39,7 @@ button
 	margin: 8px 0;
 	font-weight: bold;
 	cursor: pointer;
+	color: #F9FAF8;
 }
 
 button:hover
@@ -47,8 +49,7 @@ button:hover
 
 header
 {
-	background-color: #1F2937;
-	color: #F9FAF8;
+	background-color: #411E8F;
 }
 
 .nav
@@ -85,8 +86,7 @@ header
 
 .landing
 {
-	background-color: #1F2937;
-	color: #F9FAF8;
+	background-color: #352F44;
 	padding: 70px 0;
 }
 
@@ -117,9 +117,8 @@ header
 
 .landing-btn
 {
-	background-color: #3882F6;
+	background-color: #411E8F;
 	border-style: none;
-	color: #F9FAF8;
 }
 
 .landing-img
@@ -173,7 +172,7 @@ header
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	outline: 5px solid #1F2937;
+	outline: 5px solid #352F44;
 	margin-bottom: 6px;
 }
 
@@ -184,19 +183,25 @@ header
 
 .social-links
 {
-	background-color: #E5E7EB;
 	padding: 70px;
 	text-align: center;
+	background-color: #352F44;
 }
 
 .cta
 {
-	margin: 24px auto;
+	background-color: #352F44;
+	padding-bottom: 50px;
+}
+
+.cta-content
+{
+	margin: auto;
 	padding: 32px 100px;
-	border: 4px solid #3882F6;
+	border: 4px solid #411E8F;
 	border-radius: 16px;
 	width: 600px;
-	background-color: #3882F6;
+	background-color: #411E8F;
 	color: #F9FAF8;
 	display: flex;
 	align-items: center;
@@ -220,7 +225,7 @@ header
 
 footer
 {
-	background-color: #1F2937;
+	background-color: #5C527F;
 	color: #F9FAF8;
 	padding: 60px;
 	text-align: center;

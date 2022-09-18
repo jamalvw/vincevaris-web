@@ -171,6 +171,7 @@ header
 	object-fit: cover;
 	outline: 5px solid #352F44;
 	margin-bottom: 6px;
+	background-color: white;
 }
 
 .projects-item-name

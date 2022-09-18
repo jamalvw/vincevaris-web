@@ -177,9 +177,16 @@ header
 	margin-bottom: 6px;
 }
 
-.projects-item-text
+.projects-item-name
 {
 	font-size: 18px;
+	font-weight: bold;
+}
+
+.projects-item-desc
+{
+	font-size: 16px;
+	font-style: italic;
 }
 
 .social-links

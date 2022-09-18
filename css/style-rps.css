@@ -1,0 +1,28 @@
+#display
+{
+	text-align: center;
+	margin: 20px;
+}
+
+#rounds
+{
+	font-weight: bold;
+}
+
+#score
+{
+	margin: 8px;
+}
+
+#controls
+{
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.controls-btn
+{
+	margin: 0 8px;
+}

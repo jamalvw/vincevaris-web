@@ -41,6 +41,8 @@ button
 	font-weight: bold;
 	cursor: pointer;
 	color: #F9FAF8;
+	background-color: #411E8F;
+	border-style: none;
 }
 
 button:hover
@@ -114,12 +116,6 @@ header
 {
 	font-size: 18px;
 	color: #E5E7EB;
-}
-
-.landing-btn
-{
-	background-color: #411E8F;
-	border-style: none;
 }
 
 .landing-img

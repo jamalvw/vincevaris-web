@@ -41,36 +41,41 @@ window.onload = function()
 	{
 		const cpuSelection = getComputerChoice();
 
-		resultTxt.innerHTML = `You chose ${playerSelection}. Computer chose ${cpuSelection}.`;
+		resultTxt.innerHTML = `You chose <strong>${playerSelection}</strong>. Computer chose <strong>${cpuSelection}</strong>.`;
 
 		switch (checkState(playerSelection, cpuSelection))
 		{
 			case 'win':
 				wins++;
 				rounds++;
-				resultTxt.innerHTML += `<br><br>Round won! ${playerSelection} beats ${cpuSelection}.`;
+				resultTxt.innerHTML += `<br><br>Round won! <strong>${playerSelection}</strong> beats <strong>${cpuSelection}</strong>.`;
 				break;
 			case 'lose':
 				losses++;
 				rounds++;
-				resultTxt.innerHTML += `<br><br>Round lost! ${playerSelection} beats ${cpuSelection}.`;
+				resultTxt.innerHTML += `<br><br>Round lost! <strong>${playerSelection}</strong> beats <strong>${cpuSelection}</strong>.`;
 				break;
 			case 'tie':
-				resultTxt.innerHTML += `<br><br>Round tied! You both picked ${playerSelection}.`;	
+				resultTxt.innerHTML += `<br><br>Round tied! You both picked <strong>${playerSelection}</strong>.`;	
 				break;
 		}
 
-		roundsTxt.innerHTML = `Round ${rounds + 1}`;
 		scoreTxt.innerHTML = `${wins} - ${losses}`;
 		
-		//if (wins > rounds / 2 || losses > rounds / 2)
-		//{
-		//	if (wins == losses)
-		//		console.log(`It's a draw! You tied ${wins} - ${losses}.`);
-		//	else if (wins > losses)
-		//		console.log(`Nice work! You won ${wins} - ${losses}.`);
-		//	else if (wins < losses)
-		//		console.log(`Game over! You lost ${wins} - ${losses}.`);
-		//}
+		if (wins >= 3 || losses >= 3)
+		{
+			if (wins > losses)
+				resultTxt.innerHTML += `<br><br>Great job! You won <strong>${wins}</strong> - <strong>${losses}</strong>.`;
+			else
+				resultTxt.innerHTML += `<br><br>Game over! You lost <strong>${wins}</strong> - <strong>${losses}</strong>.`;
+
+			rockBtn.disabled = true;
+			paperBtn.disabled = true;
+			scissorsBtn.disabled = true;
+		}
+		else
+		{
+			roundsTxt.innerHTML = `Round ${rounds + 1}`;
+		}
 	}
 }

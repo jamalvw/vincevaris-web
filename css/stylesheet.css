@@ -14,6 +14,7 @@ body {
 	background-color: black;
 	color: #fff;
 }
+
 img {
 	margin: 8px;
 }
@@ -35,10 +36,15 @@ img {
 	font-weight: bold;
 }
 
+.quick-links
+{
+	display: flex;
+}
+
 .bg-slider {
-	width: min-content;
-	margin: 1vmin 0;
-	padding: 0 1vmin;
+	margin: 1vmin 1vmin;
+	padding: 0 2vmin;
+	outline: 1px solid rgba(255, 255, 255, 0.4);
 	background-image: linear-gradient(90deg,
 			transparent 0%,
 			transparent 50%,

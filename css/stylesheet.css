@@ -16,7 +16,7 @@ h1
 body {
 	width: 100vw;
 	height: 100vh;
-	background-color: #201A1A;
+	background-color: #1E2826;
 	color: #fff;
 	overflow: hidden;
 }
@@ -29,7 +29,7 @@ body {
 	align-items: center;
 	gap: 24px;
 	opacity: 0;
-	animation: fadein .2s ease-out forwards;
+	animation: fadein .15s ease-out forwards;
 }
 
 @keyframes fadein
@@ -62,14 +62,12 @@ body {
 			white 50%,
 			white 100%);
     background-size: 200%;
-    transition: background-position .15s ease-out, scale .18s ease-out;
-}
-
-.bg-slider > a {
-	mix-blend-mode: difference;
+    transition: background-position .15s ease-out, scale .18s ease-out, color .15s ease-out;
+	color: white;
 }
 
 .bg-slider:hover {
+	color: black;
     background-position: -100% 100%;
 }
 

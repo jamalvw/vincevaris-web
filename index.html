@@ -4,22 +4,176 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="vincevaris">
+    <meta property="og:title" content="Jamal Williams">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sriracha&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/stylesheet.css">
 	<title>vincevaris</title>
 </head>
 <body>
 	<div class="container">
-		<h1>vincevaris</h1>
-		<div class="nav">
-			<a href="./about.html"><div class="bg-slider">about</div></a>
-			<a href="./works.html"><div class="bg-slider">works</div></a>
-			<a href="./contact.html"><div class="bg-slider">contact</div></a>
+		<header>
+			<div class="logo" href="#">
+				<p class="name">Jamal Williams</a>
+				<p class="alias">@vincevaris</p>
+			</div>
+			<div class="nav">
+				<a href="#about"><div class="link-slider">About</div></a>
+				<a href="#works"><div class="link-slider">Works</div></a>
+				<a href="#contact"><div class="link-slider link-slider--red">Contact</div></a>
+			</div>
+		</header>
+		<div class="content">
+			<div class="section" id="about">
+				<div class="about__text">
+					<h1 class="fade-in anim-delay--1" style="font-size: 64px;">Brilliance through Code</h1>
+					<p class="fade-in anim-delay--2" style="font-size: 24px;">
+						Hi! I'm Jamal, a full-stack JavaScript developer.<br>
+						Code is <strong>art</strong>, and the right developer can write a <strong>masterpiece</strong>.
+					</p>
+				</div>
+				<div class="about__skills fade-in anim-delay--3">
+					<h2>Skills</h2>
+					<h4>Frontend</h4>
+					<div class="skills__list fade-in anim-delay--4" id="frontend">
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/frontend/html5.png"/>
+							<p class="skill__name">HTML5</p>
+						</div>
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/frontend/css3.png"/>
+							<p class="skill__name">CSS3</p>
+						</div>
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/frontend/javascript.png"/>
+							<p class="skill__name">JavaScript</p>
+						</div>
+					</div>
+					<h4>Backend</h4>
+					<div class="skills__list fade-in anim-delay--4--1" id="backend">
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/backend/nodejs.png"/>
+							<p class="skill__name">Node.js</p>
+						</div>
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/backend/express.png"/>
+							<p class="skill__name">Express</p>
+						</div>
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/backend/java.png"/>
+							<p class="skill__name">Java</p>
+						</div>
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/backend/mongodb.png"/>
+							<p class="skill__name">MongoDB</p>
+						</div>
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/backend/firebase.png"/>
+							<p class="skill__name">Firebase</p>
+						</div>
+					</div>
+					<h4>Miscellaneous</h4>
+					<div class="skills__list fade-in anim-delay--4--2" id="misc">
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/misc/git.png"/>
+							<p class="skill__name">Git</p>
+						</div>
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/misc/npm.png"/>
+							<p class="skill__name">NPM</p>
+						</div>
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/misc/github.png"/>
+							<p class="skill__name">GitHub</p>
+						</div>
+						<div class="skill__item">
+							<img class="skill__img" src="./images/skills/misc/heroku.png"/>
+							<p class="skill__name">Heroku</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="works">
+				<div class="works__text">
+					<h1 class="fade-in anim-delay--1" style="font-size: 64px;">My Works</h1>
+					<p class="fade-in anim-delay--2" style="font-size: 24px;">
+						Most projects listed are available on my <a href="https://github.com/vincevaris">GitHub</a>.
+					</p>
+				</div>
+				<div class="works__list">
+					<div class="work__container fade-in anim-delay--3">
+						<div class="work">
+							<div class="work__img">
+								<img src="./images/kirisame.png"/>
+							</div>
+							<div class="work__text">
+								<h1>Kirisame</h1>
+								<p>
+									Music bot for Discord created using discord.js.<br>
+									Supports playing audio from YouTube and SoundCloud.
+								</p>
+								<div class="work__links">
+									<a href="./bots/kirisame.html">Website</a>
+									<a href="https://github.com/vincevaris/kirisame">GitHub</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="work__container fade-in anim-delay--3--1">
+						<div class="work">
+							<div class="work__img">
+								<img src=""/>
+							</div>
+							<div class="work__text">
+								<h1>Tic Tac Toe</h1>
+								<p>
+									Simple Tic-Tac-Toe game.
+								</p>
+								<div class="work__links">
+									<a href="https://vincevaris.github.io/tic-tac-toe">Website</a>
+									<a href="https://github.com/vincevaris/tic-tac-toe">GitHub</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="work__container fade-in anim-delay--4">
+						<div class="work">
+							<div class="work__img">
+								<img src="./images/rockpaperscissors/scissors.png"/>
+							</div>
+							<div class="work__text">
+								<h1>Rock Paper Scissors</h1>
+								<p>
+									Simple Rock Paper Scissors game.
+								</p>
+								<div class="work__links">
+									<a href="./games/rps.html">Website</a>
+									<a href="https://github.com/vincevaris/vincevaris-web/tree/main/games">GitHub</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="work__container fade-in anim-delay--4">
+						<div class="work">
+							<div class="work__img">
+								<img src=""/>
+							</div>
+							<div class="work__text">
+								<h1>Etch-a-Sketch</h1>
+								<p>
+									Simple Etch-a-Sketch app.
+								</p>
+								<div class="work__links">
+									<a href="https://vincevaris.github.io/etchasketch">Website</a>
+									<a href="https://github.com/vincevaris/etchasketch">GitHub</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<p>copyright &copy; vincevaris 2022</p>
 	</div>
 </body>
 </html>

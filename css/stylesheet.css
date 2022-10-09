@@ -139,6 +139,7 @@ header
 .work__container
 {
 	width: 40%;
+	height: 210px;
 }
 
 .work
@@ -149,6 +150,7 @@ header
 	background-color: white;
 	justify-content: space-between;
 	width: 100%;
+	height: 100%;
 	display: flex;
 	transition: transform .2s;
 	gap: 24px;
